@@ -33,25 +33,25 @@ This activity reinforces:
 // ============================================
 
 // Script 1 - Greeting multiple users
-console.log("Welcome, Alice!");
-console.log("Welcome, Bob!");
-console.log("Welcome, Charlie!");
+// console.log("Welcome, Alice!");
+// console.log("Welcome, Bob!");
+// console.log("Welcome, Charlie!");
 
-// Script 2 - Sum calculation
-let num1 = 5, num2 = 10;
-let sum = num1 + num2;
-console.log("The sum of 5 and 10 is " + sum);
+// // Script 2 - Sum calculation
+// let num1 = 5, num2 = 10;
+// let sum = num1 + num2;
+// console.log("The sum of 5 and 10 is " + sum);
 
-// Script 3 - Product calculation
-let product = num1 * num2;
-console.log("The product of 5 and 10 is " + product);
+// // Script 3 - Product calculation
+// let product = num1 * num2;
+// console.log("The product of 5 and 10 is " + product);
 
-// Script 4 - Print names from a list
-let names = ["Alice", "Bob", "Charlie"];
-console.log("Names in the list:");
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
-}
+// // Script 4 - Print names from a list
+// let names = ["Alice", "Bob", "Charlie"];
+// console.log("Names in the list:");
+// for (let i = 0; i < names.length; i++) {
+//     console.log(names[i]);
+// }
 
 /*
 ===========================================
@@ -72,3 +72,39 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+// Script 1 - Greeting Multiple users
+function greet(name){
+ console.log(`Welcome, ${name}!`);  
+} 
+greet("Alice");
+greet("Bob");
+greet ("Charle");
+
+// Script 2- Sum Calculation
+let num1 = 5, num2 = 10;
+function add(num1, num2){
+   return num1 + num2
+}
+add();
+
+function printSum(num1,num2){
+   console.log(`the sum of ${num1} amd ${num2} is ${add(num1,num2)}`);
+}
+printSum(num1,num2)
+
+// Script 3 - Product calculation
+function multiply(num1,num2){
+   return num1 * num2;
+}
+
+function printMultiply(num1,num2){
+   console.log(` the product of ${num1} and ${num2} is ${multiply(num1,num2)}.`)
+}
+printMultiply(num1,num2)
+
+// Script 4 - Print names from a list
+let names = ["Alice", "Bob", "Charlie"];
+function namesArry (names){
+   console.log(`List of Names: ${names}`);
+}
+namesArry(names)
