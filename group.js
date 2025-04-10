@@ -21,7 +21,7 @@ console.log(testCal);
 
 function calculateTotalCost(numAttendees, cost){
     let total = calculateSubTotal(numAttendees, cost);
-    if (total > 100.0){
+    if (numAttendees > 100.0){
         return total * .9;
     }
     else{
@@ -31,6 +31,7 @@ function calculateTotalCost(numAttendees, cost){
 function calculateSubTotal(numAttendees, cost){
     return numAttendees * cost;
 }
+
 let testJason = calculateTotalCost(110, 20);
 console.log(testJason);
 let testMelissa = calculateTotalCost(20, 200);
